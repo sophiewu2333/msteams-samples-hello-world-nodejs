@@ -23,7 +23,7 @@ module.exports.setup = function (app) {
   var inMemoryBotStorage = new builder.MemoryBotStorage()
 
   // Define a simple bot with the above connector that echoes what it received
-  var bot = new builder.UniversalBot(connector, function (session) {
+  new builder.UniversalBot(connector, function (session) {
     // Message might contain @mentions which we would like to strip off in the response
     var text = teams.TeamsMessage.getTextWithoutMentions(session.message)
     session.send('You said: %s', text)
