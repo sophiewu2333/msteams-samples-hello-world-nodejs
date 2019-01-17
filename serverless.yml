@@ -1,5 +1,5 @@
 service:
-  name: ms-teams-ringcentral
+  name: msteams-ringcentral-meetings
 provider:
   stage: ${opt:stage, 'prod'}
   name: aws

@@ -1,7 +1,7 @@
 {
-  "name": "msteams-nodejs-hello-world",
+  "name": "msteams-ringcentral-meetings",
   "version": "1.0.0",
-  "description": "Microsoft Teams Node.js Hello World App. Start here to build your first app on the Teams platform.",
+  "description": "Microsoft Teams RingCentral Meetings App.",
   "scripts": {
     "dev": "node -r @babel/register -r dotenv/config src/express.js",
     "ngrok": "ngrok http -region eu 3333",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OfficeDev/msteams-samples-hello-world-nodejs.git"
+    "url": "git+https://github.com/tylerlong/msteams-samples-hello-world-nodejs.git"
   },
   "author": "Microsoft Corp.",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/OfficeDev/msteams-samples-hello-world-nodejs/issues"
+    "url": "https://github.com/tylerlong/msteams-samples-hello-world-nodejs/issues"
   },
-  "homepage": "https://docs.microsoft.com/en-us/microsoftteams/platform/get-started/get-started-nodejs",
+  "homepage": "https://github.com/tylerlong/msteams-samples-hello-world-nodejs",
   "dependencies": {
     "botbuilder": "^3.11.0",
     "botbuilder-teams": "^0.1.6",

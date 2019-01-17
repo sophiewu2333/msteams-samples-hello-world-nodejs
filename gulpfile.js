@@ -10,7 +10,7 @@ gulp.task('clean', function () {
 
 gulp.task('generate-manifest', function () {
   gulp.src(['src/static/images/ringcentral*', 'src/manifest.json'])
-    .pipe(zip('helloworldapp.zip'))
+    .pipe(zip('ringcentral-meetings-app.zip'))
     .pipe(gulp.dest('manifest'))
 })
 
