@@ -1,3 +1,35 @@
+# Instructions
+
+## Dev setup
+
+```
+yarn install
+yarn ngork
+cp .sample.env .env
+edit .env
+yarn dev
+```
+
+
+## Deploy to AWS Lambda
+
+```
+cp .sample.env.yml .env.yml
+edit .env.yml
+yarn deploy
+```
+
+
+### Check remote logs
+
+```
+npx sls logs -f app
+```
+
+
+---
+
+
 # Official documentation
 
 More information for this sample - and for how to get started with Microsoft Teams development in general - is found in [Get started on the Microsoft Teams platform with Node.js](https://docs.microsoft.com/en-us/microsoftteams/platform/get-started/get-started-nodejs).
@@ -49,7 +81,7 @@ Once you've installed the extensions, you'll see a new Azure icon on the left in
    MICROSOFT_APP_PASSWORD=<YOUR BOT'S APP PASSWORD>
    WEBSITE_NODE_DEFAULT_VERSION=8.9.4
    ```
-   
+
 1. Configure the Deployment Source for your app (either your local copy of this repository or one you've forked on GitHub).
 1. Deploy your web app. Visual Studio Code will tell you when you are done.
 
