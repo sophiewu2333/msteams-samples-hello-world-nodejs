@@ -5,9 +5,9 @@ module.exports.setup = function (app) {
   var teams = require('botbuilder-teams')
   var config = require('config')
 
-  if (!config.has('bot.appId')) {
-    // We are running locally; fix up the location of the config directory and re-intialize config
-    process.env.NODE_CONFIG_DIR = '../config'
+  if (!config.has('bot.appId')) { // AWS Lambda
+    // Fix up the location of the config directory and re-intialize config
+    process.env.NODE_CONFIG_DIR = process.env['LAMBDA_TASK_ROOT'] + '/dist/config'
     delete require.cache[require.resolve('config')]
     config = require('config')
   }
