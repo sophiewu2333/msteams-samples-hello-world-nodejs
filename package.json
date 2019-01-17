@@ -4,7 +4,7 @@
   "description": "Microsoft Teams Node.js Hello World App. Start here to build your first app on the Teams platform.",
   "scripts": {
     "dev": "node -r @babel/register -r dotenv/config src/express.js",
-    "ngrok": "ngrok http -region eu 3000",
+    "ngrok": "ngrok http -region eu 3333",
     "build": "rm -rf dist && babel src --out-dir dist --source-maps",
     "deploy": "yarn build && sls deploy"
   },
