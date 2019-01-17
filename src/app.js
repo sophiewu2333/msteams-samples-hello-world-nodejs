@@ -15,10 +15,12 @@ bot.setup(app)
 var messagingExtension = require('./messaging-extension')
 messagingExtension.setup()
 
-// Deciding which port to use
-var port = process.env.PORT || 3333
+export default app
 
-// Start our nodejs app
-app.listen(port, function () {
-  console.log(`App started listening on port ${port}`)
-})
+// // Deciding which port to use
+// var port = process.env.PORT || 3333
+
+// // Start our nodejs app
+// app.listen(port, function () {
+//   console.log(`App started listening on port ${port}`)
+// })

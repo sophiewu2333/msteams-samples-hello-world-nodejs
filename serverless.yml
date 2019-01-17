@@ -1,0 +1,20 @@
+service:
+  name: ms-teams-ringcentral
+provider:
+  stage: ${opt:stage, 'prod'}
+  name: aws
+  runtime: nodejs8.10
+  region: us-east-1
+  memorySize: 256
+  environment: ${file(./.env.yml)}
+package:
+  exclude:
+    - ./**
+    - '!dist/**'
+    - '!node_modules/**'
+  excludeDevDependencies: true
+functions:
+  app:
+    handler: dist/lambda.app
+    events:
+      - http: 'ANY {proxy+}'
