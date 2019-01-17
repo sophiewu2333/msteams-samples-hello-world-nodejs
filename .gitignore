@@ -64,3 +64,8 @@ build/
 
 # VS Code config files
 .vscode/**
+
+.serverless/
+.DS_Store
+.env
+.env.*
