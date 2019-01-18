@@ -3,6 +3,9 @@
 var express = require('express')
 var app = express()
 
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
+
 // Adding tabs to our app. This will setup routes to various views
 var tabs = require('./tabs')
 tabs.setup(app)
